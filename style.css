@@ -22,7 +22,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-color:black;
-    min-height: 100vh 
+    min-height: calc(100vh - 55px);
 }
 
 /* Start Hero section */
