@@ -7,7 +7,8 @@
 ### *Technology and languages ​​used*:
 - HTML
 - CSS
-- Bootstrab
+- Bootstrap
+- Git
 
 ***
 
