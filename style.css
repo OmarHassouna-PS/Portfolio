@@ -4,6 +4,7 @@
     --white-color: #fff;
     --gray-color: rgba(153,153,153,.2);
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,7 +25,17 @@ body {
     min-height: 100vh;
 }
 
+.Contact-section {
+    min-height: 80vh;
+}
+
 /* Start Hero section */
+
+.main-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
 
 .Hero-section, body {
     background-size: cover;
@@ -71,6 +82,18 @@ body {
 
 /* End Hero section */
 
+/* start Projects section */
+
+.cards {
+    box-shadow: 0px 0px 13px 5px var(--light-pink-color);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* End Projects section */
+
 
 /* start About section */
 
@@ -111,11 +134,15 @@ body {
     text-decoration:none;
 }
 
+.about-contents {
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+
 /* End About section */
 
 
 /* start Contact section */
-
 
 .Contact-section li p {
     margin-top: 10px;
@@ -125,6 +152,8 @@ body {
 }
 
 /* End Contact section */
+
+/* start Line and bottom Contact section */
 
 .line {
     height: 7px;
@@ -139,20 +168,13 @@ body {
     margin: 0;
 }
 
-
-.back-img {
-    animation-name: upDown;
-    animation-duration:3s;
-    animation-iteration-count: infinite;
-    animation-timing-function:ease-out;
-}
-
 .cards-body {
     background-color: #fff;
     padding: 7px;
     border-bottom-right-radius: 12px;  
     border-bottom-left-radius: 12px;  
 }
+
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -170,8 +192,20 @@ body {
     --bs-btn-hover-bg: var(--light-pink-color);
     --bs-btn-hover-border-color: var(--light-pink-color);
     border-color: var(--light-pink-color);
+    --bs-btn-active-bg: var(--gray-color);
+    --bs-btn-active-border-color: var(--gray-color);
 }
 
+/* End Line and bottom Contact section */
+
+/* start animation Header */
+
+.back-img {
+    animation-name: upDown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 
 @keyframes upDown {
 
@@ -185,7 +219,26 @@ body {
     }
 }
 
-/* start animation Header */
+
+.main-img {
+    animation-name: right-left;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes right-left {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-15px);
+    }
+}
+
 
 .container {
   color: #e5e5e5;
@@ -211,20 +264,51 @@ body {
 }
 
 .animation div:first-child {
+  animation-name: text-animation;
   animation: text-animation 8s infinite;
 }
 
 @keyframes text-animation {
   0% {margin-top: 0;}
-  10% {margin-top: 0;}
-  20% {margin-top: -5.62rem;}
-  30% {margin-top: -5.62rem;}
-  40% {margin-top: -11.24rem;}
-  60% {margin-top: -11.24rem;}
+  30% {margin-top: 0;}
+  50% {margin-top: -5.62rem;}
   70% {margin-top: -5.62rem;}
-  80% {margin-top: -5.62rem;}
   90% {margin-top: 0;}
   100% {margin-top: 0;}
 }
 
 /* End animation Header */
+
+
+@media only screen and (max-width: 1000px) {
+    
+    .animation div{
+        font-size: 2rem;
+    } 
+}
+
+@media only screen and (max-width: 575px) {
+    
+    .about-contents {
+        padding-left: 0px;
+    } 
+}
+
+@media only screen and (max-width: 575px) {
+    
+    .about-contents {
+        padding-left: 0px;
+    } 
+}
+@media only screen and (min-width: 1330px) {
+    
+    .main-img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        width: 450px;
+        height: 450px;
+    }
+}
+

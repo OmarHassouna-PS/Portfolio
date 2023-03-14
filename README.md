@@ -1,6 +1,6 @@
 # ***portfolio***
 
-## **portfolio is my personal page project that is responsive to all screens.**
+## **The portfolio is my personal page project that includes my profession, my professional experiences, my projects, and ways of communicating with me. It was designed in a responsive way for all devices.**
 
 # [Live page](https://omarhassouna-ps.github.io/portfolio/)
 
